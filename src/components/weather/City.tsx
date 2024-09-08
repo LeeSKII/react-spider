@@ -1,4 +1,3 @@
-import React from "react";
 import useWeatherProvince from "@/hooks/useWeatherCity";
 import { Button } from "@/components/ui/button";
 

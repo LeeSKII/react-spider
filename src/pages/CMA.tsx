@@ -11,7 +11,6 @@ export default function Page() {
   const [cityId, setCityId] = useState<string>("");
 
   function handleCityClick(cityId: string) {
-    console.log(cityId);
     setCityId(cityId);
   }
 

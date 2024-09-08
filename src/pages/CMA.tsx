@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 
 import Cities from "@/components/weather/City";
 import Weather from "@/components/weather/Weather";
+import WeatherForecast from "@/components/weather/WeatherForecast";
 
 export default function Page() {
   const provinces = useWeatherProvince();
@@ -36,6 +37,7 @@ export default function Page() {
       </div>
       <Cities provinceCode={provinceCode} setCityId={handleCityClick} />
       <Weather cityId={cityId} key={cityId} />
+      <WeatherForecast cityId={cityId} key={`${cityId}-forecast`} />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-type WeatherForecast = {
+type HourlyWeather = {
   time: string;
   weather: string;
   temperature: string;
@@ -10,6 +10,20 @@ type WeatherForecast = {
   pressure: string;
   humidity: string;
   cloud_cover: string;
+};
+
+type WeatherForecast = {
+  weekday: string;
+  date: string;
+  day_weather: string;
+  day_wind: string;
+  day_wind_strength: string;
+  high_temp: string;
+  low_temp: string;
+  night_weather: string;
+  night_wind: string;
+  night_wind_strength: string;
+  hourly_data: HourlyWeather[];
 };
 
 function useWeatherForecast({ cityId }: { cityId: string }) {

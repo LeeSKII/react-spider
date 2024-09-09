@@ -14,7 +14,7 @@ export default function Weather({ cityId }: { cityId: string }) {
     <div>
       {weather && (
         <>
-          <Card>
+          <Card className="mt-3">
             <CardHeader>
               <CardTitle>
                 <div>{weather.location.name}</div>

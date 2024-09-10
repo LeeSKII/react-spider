@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function App() {
   const [msg, setMsg] = useState("");
@@ -19,6 +19,9 @@ function App() {
     <div className="container mx-auto">
       <div className="text-center font-bold text-xl m-4">{msg}</div>
       <Button onClick={() => navigate("/weather")}>Weather</Button>
+      <div>
+        <Link to="/test">Test</Link>
+      </div>
     </div>
   );
 }
